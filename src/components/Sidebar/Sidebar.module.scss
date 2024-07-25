@@ -1,0 +1,48 @@
+.sidebar {
+    width: 20%;
+    border-right: 1px solid rgb(212, 214, 224);
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    padding: 30px 30px 50px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 47px;
+    &__info {
+        display: flex;
+        flex-direction: column;
+        &_img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        &_name {
+            color: rgb(0, 0, 0);
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 27px;
+            margin-top: 21px;
+            margin-bottom: 7px;
+        }
+        &_email {
+            color: rgb(158, 161, 177);
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 19px;
+        }
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        &_link {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            color: rgb(0, 0, 0);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22px;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.btn {
+    border-radius: 28.5px;
+    box-shadow: 0px 10px 40px 0px rgba(122, 129, 190, 0.16);
+    background: rgb(254, 114, 76);
+    height: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    width: 100%;
+    &:disabled {
+        background: rgba(254, 115, 76, 0.40);
+        cursor: not-allowed;
+    }
+    span {
+        color: rgb(255, 255, 255);
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 20px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+}

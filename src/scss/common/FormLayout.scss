@@ -1,0 +1,93 @@
+.formLayout {
+    display: flex;
+    height: 100vh;
+    &__left {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-right: 1px solid rgb(212, 214, 224);
+    }
+    &__right {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        .form {
+            max-width: 325px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            &__title {
+                color: rgb(0, 0, 0);
+                font-size: 36.41px;
+                font-weight: 600;
+                line-height: 120%;
+            }
+            &__content {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                &_item {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    &_error {
+                        color: red;
+                        font-size: 14px;
+                    }
+                    label {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 5px;
+                    }
+                    &_span {
+                        color: rgb(196, 196, 196);
+                        font-size: 17px;
+                        font-weight: 400;
+                        line-height: 23px;
+                    }
+                    &_input {
+                        border: 1px solid rgb(238, 238, 238);
+                        border-radius: 10px;
+                        box-shadow: 15px 20px 45px 0px rgba(233, 233, 233, 0.25);
+                        background: rgb(255, 255, 255);
+                        height: 65px;
+                        padding: 20px;
+                        &::placeholder {
+                            color: rgb(196, 196, 196);
+                            font-size: 17px;
+                            font-weight: 400;
+                            line-height: 23px;
+                        }
+                    }
+                }
+            }
+            &__info {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                &_error {
+                    color: red;
+                    font-size: 14px;
+                    text-align: center;
+                    margin-bottom: 15px;
+                }
+                &_text {
+                    font-size: 14px;
+                    font-weight: 600;
+                    line-height: 19px;
+                    color: rgb(91, 91, 94);
+                }
+                &_link {
+                    font-size: 14px;
+                    font-weight: 600;
+                    line-height: 19px;
+                    color: rgb(254, 114, 76);
+                }
+            }
+        }
+    }
+}

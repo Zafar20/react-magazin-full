@@ -1,0 +1,10 @@
+.sort {
+    display: flex;
+    gap: 20px;
+    &__title {
+        color: rgb(0, 0, 0);
+        font-size: 36.41px;
+        font-weight: 600;
+        line-height: 120%;
+    }
+}

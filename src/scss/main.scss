@@ -1,0 +1,33 @@
+@import './fonts.scss';
+@import './common/FormLayout.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'OpenSans';
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+
+button,
+input {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: none;
+}
+
+.main {
+    display: flex;
+}
+
+.container {
+    width: 80%;
+    padding: 0 60px;
+    margin: 40px 0;
+}

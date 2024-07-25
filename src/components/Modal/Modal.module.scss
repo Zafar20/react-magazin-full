@@ -1,0 +1,41 @@
+.modal {
+    background: rgba(0, 0, 0, 0.50);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__box {
+        max-width: 400px;
+        width: 100%;
+        background: white;
+        padding: 20px;
+        border-radius: 20px;
+        &_title {
+            font-size: 22px;
+            text-align: center;
+        }
+        &_btns {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        &_btn {
+            padding: 10px 15px;
+            font-size: 18px;
+            width: 100px;
+            background: rgb(254, 114, 76);
+            color: white;
+            border-radius: 15px;
+            &:hover {
+                color: white;
+                background: black;
+            }
+        }
+    }
+}
